@@ -3,7 +3,13 @@ module.exports = function (grunt) {
     connect: {
       server: {
         options: {
-          base: "build/", //TODO: once grunt-contrib-connect 0.9 is released, set index file
+          base: {
+            path: "build",
+            options: {
+              index: "index.html",
+              maxAge: 300000
+            }
+          },
           livereload: true
         }
       }
@@ -13,7 +19,7 @@ module.exports = function (grunt) {
         options: {
           livereload: true
         },
-        files: ["*.css", "app.js", "lib/*.js", "*.html"],
+        files: ["*.css", "app.js", "lib/**/*.js", "*.html"],
         tasks: ["default"]
       },
       config: {

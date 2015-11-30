@@ -1,9 +1,9 @@
 define({
-  "dataPath": "https://map.luebeck.freifunk.net/data/",
-  "siteName": "Freifunk Lübeck",
-  "mapSigmaScale": 0.5,
-  "showContact": true,
-  "maxAge": 14,
+  "dataPath": "https://meshviewer.fulda.freifunk.net/data/",
+  "siteName": "Freifunk Fulda",
+  "mapSigmaScale": 1,
+  "showContact": false,
+  "maxAge": 2,
   "mapLayers": [
     {
       "name": "Karte (Humanitarian)",
@@ -48,5 +48,20 @@ define({
       "name": "Einfarbige Karte (Stamen Toner Lines)",
       "provider": "Stamen.TonerLite"
     }
+  ],
+    "nodeInfos": [
+    { "name": "Knotenstatistik",
+      "href": "https://meshviewer.fulda.freifunk.net/data/dnodes/{NODE_ID}.png",
+      "thumbnail": "https://meshviewer.fulda.freifunk.net/data/nodes/{NODE_ID}.png",
+      "caption": "Knoten {NODE_ID}"
+    }
+  ],
+  "globalInfos": [
+    { "name": "Wochenstatistik",
+      "href": "https://meshviewer.fulda.freifunk.net/data/data/globalGraph.png",
+      "thumbnail": "https://meshviewer.fulda.freifunk.net/data/nodes/globalGraph.png",
+      "caption": "Bild mit Wochenstatistik"
+    }
   ]
+
 })
