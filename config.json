@@ -1,7 +1,6 @@
 {
   "dataPath": [
     "https://meshviewer.fulda.freifunk.net/data/",
-    "//meshviewer.maglos.com/data/"
   ],
   "siteName": "Freifunk Fulda",
   "mapSigmaScale": 0.5,
